@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import styles from '../styles/Home.module.css';
+import styles from './styles/Home.module.css';
 
 export default function Home() {
   const [showText, setShowText] = useState(false);
@@ -21,7 +21,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       {showText && (
-        <h1 className={styles.title}>Convocamos você para a linha de frente ouça em primeira mão o som da guerra</h1>
+        <div className={styles.titleContainer}>
+          <h1 className={styles.title}>Convocamos você para a linha de frente ouça em primeira mão o som da guerra</h1>
+        </div>
       )}
       {showButton && (
         <div className={styles.buttonContainer}>

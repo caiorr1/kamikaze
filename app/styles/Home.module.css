@@ -1,20 +1,29 @@
 .container {
-  background-image: url('/background_cortado.png'); 
+  background-image: url('/background_cortado.png');
   background-size: cover;
   background-position: center top;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10vh;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.titleContainer {
+  position: absolute;
+  top: 10vh; /* Ajusta essa posição para controlar a altura do título */
+  width: 100%;
+  text-align: center;
 }
 
 .title {
-  font-family: 'Rubik Glitch', sans-serif;
-  font-size: 31px; /* Ajustado para 31px */
+  font-family: var(--font-rubik), sans-serif;
+  font-size: 31px;
   margin: 0;
-  color: #000000; /* Texto em preto */
-  text-align: center;
+  color: #000000;
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
@@ -22,7 +31,9 @@
 .buttonContainer {
   display: flex;
   justify-content: center;
-  margin-top: 270px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 270px; 
 }
 
 .fadeInButton {
@@ -33,17 +44,18 @@
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: #333333; /* Cor escura que contrasta com o fundo */
-  border: 2px solid #ffffff; /* Bordas brancas para destaque */
+  background-color: #333333; /* Cor escura para o botão */
+  border: none; /* Remove a borda branca */
   border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.2s ease, background-color 0.2s ease;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra suave */
+  width: 100%;
 }
 
 .fadeInButton:hover {
-  background-color: gray; /* Verde escuro no hover */
+  background-color: gray; /* Altera a cor no hover */
   transform: scale(1.05); /* Leve aumento no hover */
 }
 
