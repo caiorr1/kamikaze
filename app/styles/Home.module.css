@@ -1,5 +1,5 @@
 .container {
-  background-image: url('/background_cortado.png'); /* Caminho absoluto para a imagem */
+  background-image: url('/background_half.PNG'); /* Caminho absoluto para a imagem */
   background-size: cover;
   background-position: center top;
   height: 100vh;
