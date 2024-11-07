@@ -14,7 +14,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-// Adicionando a fonte Rubik
 const rubik = localFont({
   src: [
     { path: "./fonts/RubikGlitch-Regular.ttf", weight: "400" },
@@ -37,7 +36,7 @@ export default function RootLayout({
       <head>
         {/* Script do Google Analytics */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`} // Substitua pelo seu ID do Google Analytics
+          src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`} // Substituir pelo ID do Google Analytics
           strategy="afterInteractive"
         />
         <Script

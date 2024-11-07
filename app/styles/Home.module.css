@@ -1,5 +1,5 @@
 .container {
-  background-image: url('/background_half.PNG'); /* Caminho absoluto para a imagem */
+  background-image: url('/background_metade.PNG'); 
   background-size: cover;
   background-position: center top;
   height: 100vh;
@@ -14,7 +14,7 @@
 
 .titleContainer {
   position: absolute;
-  top: 10vh; /* Ajusta essa posição para controlar a altura do título */
+  top: 10vh; 
   width: 100%;
   text-align: center;
 }
@@ -44,22 +44,21 @@
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: #333333; /* Cor escura para o botão */
-  border: none; /* Remove a borda branca */
+  background-color: #333333; 
+  border: none; 
   border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.2s ease, background-color 0.2s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Sombra suave */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
   width: 100%;
 }
 
 .fadeInButton:hover {
-  background-color: gray; /* Altera a cor no hover */
-  transform: scale(1.05); /* Leve aumento no hover */
+  background-color: gray; 
+  transform: scale(1.05); 
 }
 
-/* Animação de fade-in */
 @keyframes fadeIn {
   from {
     opacity: 0;
