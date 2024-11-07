@@ -12,7 +12,7 @@ export default function Detalhes() {
         width={300}
         height={300}
       />
-      <p className={styles.addressText}>endereço: Rua kamikaze 00</p>
+      <p className={styles.addressText}>Endereço: Rua kamikaze 00</p>
     </div>
   );
 }
