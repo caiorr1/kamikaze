@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import styles from '../styles/Detalhes.module.css';
+import Image from "next/image";
+import styles from "../styles/Detalhes.module.css";
 
 export default function Detalhes() {
   return (
     <div className={styles.container}>
       <div className={styles.overlay}></div>
       <Image
-        src="/background.png" 
+        src="/background_normal.PNG"
         alt="Imagem central"
         className={styles.centeredImage}
         width={300}
