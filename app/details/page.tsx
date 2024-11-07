@@ -1,18 +1,19 @@
-import Image from "next/image";
-import styles from "../styles/Detalhes.module.css";
+import Image from 'next/image';
+import styles from '../styles/Detalhes.module.css';
 
 export default function Detalhes() {
   return (
     <div className={styles.container}>
       <div className={styles.overlay}></div>
       <Image
-        src="/background_normal.PNG"
+        src="/background_normal.png"
         alt="Imagem central"
         className={styles.centeredImage}
         width={300}
         height={300}
+        priority 
       />
-      <p className={styles.addressText}>Endereço: Rua kamikaze 00</p>
+      <p className={styles.addressText}>endereço: Rua kamikaze 00</p>
     </div>
   );
 }
