@@ -1,4 +1,5 @@
 "use client";
+
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from './styles/Home.module.css';
@@ -17,9 +18,10 @@ export default function Home() {
     const textTimer = setTimeout(() => setShowText(true), 1000);
     const buttonTimer = setTimeout(() => setShowButton(true), 1000);
 
-    if (window.gtag) {
+    // Google Analytics tracking
+    if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID, {
-        page_path: '/home', 
+        page_path: '/home',
       });
     }
 

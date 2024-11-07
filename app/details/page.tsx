@@ -6,7 +6,7 @@ export default function Detalhes() {
     <div className={styles.container}>
       <div className={styles.overlay}></div>
       <Image
-        src="/background_normal.png"
+        src="/kamikaze_album_normal.png"
         alt="Imagem central"
         className={styles.centeredImage}
         width={300}

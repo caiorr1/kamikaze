@@ -1,8 +1,8 @@
 .container {
-  background-image: url('/background_metade.png'); 
+  background-image: url('/kamikaze_album_half.png');
   background-size: cover;
   background-position: center top;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
 
 .titleContainer {
   position: absolute;
-  top: 10vh; 
+  top: 10vh;
   width: 100%;
   text-align: center;
 }
@@ -33,7 +33,7 @@
   justify-content: center;
   width: 100%;
   max-width: 300px;
-  margin-top: 270px; 
+  margin-top: 270px;
 }
 
 .fadeInButton {
@@ -44,19 +44,19 @@
   font-size: 1rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: #333333; 
-  border: none; 
+  background-color: #333333;
+  border: none;
   border-radius: 50px;
   cursor: pointer;
   text-decoration: none;
   transition: transform 0.2s ease, background-color 0.2s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   width: 100%;
 }
 
 .fadeInButton:hover {
-  background-color: gray; 
-  transform: scale(1.05); 
+  background-color: gray;
+  transform: scale(1.05);
 }
 
 @keyframes fadeIn {
@@ -65,5 +65,16 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .buttonContainer {
+    max-width: 350px;
+    margin-top: 30px;
   }
 }
