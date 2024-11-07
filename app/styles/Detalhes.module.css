@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('/background_metade.png');
+  background-image: url('/album_image_cut.png');
   background-size: cover;
   background-position: center;
 }
