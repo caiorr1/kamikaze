@@ -9,8 +9,8 @@ export default function Home() {
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
-    const textTimer = setTimeout(() => setShowText(true), 2000);
-    const buttonTimer = setTimeout(() => setShowButton(true), 4000);
+    const textTimer = setTimeout(() => setShowText(true), 1000);
+    const buttonTimer = setTimeout(() => setShowButton(true), 1000);
 
     return () => {
       clearTimeout(textTimer);
