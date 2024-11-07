@@ -4,6 +4,12 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from './styles/Home.module.css';
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 export default function Home() {
   const [showText, setShowText] = useState(false);
   const [showButton, setShowButton] = useState(false);
@@ -11,6 +17,13 @@ export default function Home() {
   useEffect(() => {
     const textTimer = setTimeout(() => setShowText(true), 1000);
     const buttonTimer = setTimeout(() => setShowButton(true), 1000);
+
+    
+    if (window.gtag) {
+      window.gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID, {
+        page_path: '/home', 
+      });
+    }
 
     return () => {
       clearTimeout(textTimer);
@@ -22,7 +35,9 @@ export default function Home() {
     <div className={styles.container}>
       {showText && (
         <div className={styles.titleContainer}>
-          <h1 className={styles.title}>Convocamos você para a linha de frente ouça em primeira mão o som da guerra</h1>
+          <h1 className={styles.title}>
+            Convocamos você para a linha de frente ouça em primeira mão o som da guerra
+          </h1>
         </div>
       )}
       {showButton && (
